@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  jupyter:
+    image: jupyter/tensorflow-notebook
+    volumes:
+    - ./work:/home/jovyan/work
+    command: start-notebook.sh
+    ports:
+    - "8888:8888"
